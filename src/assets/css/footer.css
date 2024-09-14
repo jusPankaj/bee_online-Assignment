@@ -1,0 +1,136 @@
+/* Footer */
+
+.footer-container {
+    padding: 0 180px;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+  
+  .footer-list > * {
+    text-decoration: none;
+    color: #737373;
+    font-size: 14px;
+    font-weight: 700;
+    min-width: 120px;
+  }
+  
+  .footer-list > div {
+    display: flex;
+    gap: 5px;
+  }
+  
+  .footer-header {
+    color: #252B42;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  
+  .footer-phone,
+  .footer-address,
+  .footer-mail {
+    display: flex;
+    gap: 6px;
+  }
+  
+  /* Rights Reserved Section */
+  .rightsReserved {
+    height: 74px;
+    display: flex;
+    padding: 0 120px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F3F3F3;
+  }
+  
+  .rightsReserved > h6 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #737373;
+  }
+  
+  .footer-social-icon > * {
+    padding: 10px;
+  }
+  
+
+  
+
+
+  @media (max-width: 992px) {
+    .footer-container {
+      padding: 0 60px; 
+    }
+  
+    .footer {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+  
+    .footer-list {
+      flex: 1 1 200px;
+    }
+  
+    .rightsReserved {
+      padding: 0 60px; 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .footer-container {
+      padding: 0 30px; 
+    }
+  
+    .footer {
+      flex-direction: column; 
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .footer-list {
+      flex: 1 1 auto; 
+      align-items: center;
+      text-align: center;
+    }
+  
+    .footer-phone, .footer-address, .footer-mail {
+      font-size: 12px; 
+    }
+  
+    .rightsReserved {
+      padding: 0 30px; 
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .footer-container {
+      padding: 0 15px; 
+    }
+  
+    .footer-list {
+      font-size: 12px; 
+    }
+  
+    .rightsReserved {
+      height: auto;
+      padding: 0 15px;
+    }
+  
+    .footer-social-icon > * {
+      padding: 8px; 
+    }
+  }
+  

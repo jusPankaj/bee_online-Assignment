@@ -1,0 +1,167 @@
+
+
+
+
+
+/* Package Container */
+.package-container{
+    padding: 20px 40px;
+    background-color: white;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+  }
+  
+  .inside-package{
+    display: flex;
+    gap: 60px;
+    padding: 90px 150px;
+  }
+
+  .package_left{
+    width:440px;
+    padding: 30px 0;
+  }
+
+  .package_left > a{ 
+    color: #96BB7C;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: flex;
+  }
+  
+  .thick-lining{
+    width: 94px;
+    height: 7px;
+    background-color: red;
+  }
+  
+  
+  .package-heading{
+    font-weight: 700;
+    font-size: 40px;
+  }
+  
+  .package-para{
+    width: 351px;
+    color: #737373;
+    font-size: 14px;
+    font-weight: 400;
+  }
+  
+  .learn-arrow{
+    font-size: 20px;
+
+  }
+  .learn-arrow :hover{
+    transform: translateX(5px);
+    transition-duration: 500ms;
+  }
+  
+  .cards{
+    display: flex;
+  }
+  
+  .package-card{
+    width: 170px;
+    height: 222px;
+    padding: 35px 40px;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    box-shadow: 0 13px 19px 0 #00000012;
+  }
+  
+  .cardImage-div{
+    background-color: #96BB7C;
+    width: 70px;
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .packageCard-image{
+    width: 32px;
+    height: 32px;
+  }
+  
+  .card-title{
+    color: #252B42;
+    font-weight: 700;
+    font-size: 16px;
+  }
+  
+  .CardLine{
+    width: 50px;
+    height: 2px;
+    background-color: #E74040;
+  }
+  
+  .cardContent{
+    font-weight: 400;
+    font-size: 14px;
+    color: #737373;
+  }
+  
+  @media (max-width: 768px) {
+    .inside-package {
+      flex-direction: column; /* Stack the content vertically */
+      padding: 20px 30px; /* Reduce padding */
+    }
+  
+    /* Adjust the left section (heading and paragraph) */
+    .package_left {
+      width: 100%; /* Full width on small screens */
+      padding: 0;
+    }
+  
+    .package-heading {
+      font-size: 28px; /* Reduce heading size */
+    }
+  
+    .package-para {
+      font-size: 12px; /* Reduce paragraph font size */
+      width: 100%; /* Make the paragraph width 100% */
+    }
+  
+    .cards {
+      flex-direction: column; /* Stack the cards vertically */
+      gap: 20px; /* Add gap between cards */
+    }
+  
+    /* Adjust the individual card size for mobile */
+    .package-card {
+      width: 100%; /* Full width for each card */
+      height: auto; /* Let the card adapt its height */
+      padding: 20px 30px; /* Reduce padding */
+    }
+  
+    /* Adjust the card image */
+    .cardImage-div {
+      width: 60px;
+      height: 60px;
+    }
+  
+    .packageCard-image {
+      width: 28px;
+      height: 28px;
+    }
+  
+    /* Adjust text sizes in the cards */
+    .card-title {
+      font-size: 14px;
+    }
+  
+    .cardContent {
+      font-size: 12px;
+    }
+  }
+  
+  /* Adjust hover effect arrow animation */
+  .learn-arrow:hover {
+    transform: translateX(5px);
+    transition-duration: 500ms;
+  }
